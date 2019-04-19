@@ -38,6 +38,16 @@ $ swig -python -c++ pafprocess.i && python3 setup.py build_ext --inplace
 $ python3 run_video.py  --video '../cai.mp4'
 ```
 
+*  关注我们微信公众号，了解更多
+<div align="center">
+<img src="https://raw.githubusercontent.com/lidabing/AirView/master/WechatIMG1.jpeg" height="160" width="160" >
+</div>
+
+---
+*  加我们winter老师账号进群学习
+<div align="center">
+<img src="https://github.com/binaryacademy/tf-pose-estimation/blob/master/winter.jpeg?raw=true" height="160" width="160" >
+</div>
 
 
 ### OpenPose
