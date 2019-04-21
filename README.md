@@ -32,7 +32,7 @@ $ git clone git@github.com:yinyuecheng1/tf-pose-estimation.git
 $ cd tf-openpose
 $ pip3 install -r requirements.txt
 ```
-编译第三方库，这里涉及到用swig来编译C++的源码，如果你使用windows系统，那么需要再安装好visual studio 2015和swig，并且配置好环境变量参数，swig只要简短的讲swig.exe添加到系统环境变量中。linux系统下，使用会很方便，直接编译即可。
+编译第三方库，这里涉及到用swig来编译C++的源码，如果你使用windows系统，那么需要再安装好visual studio 2015和swig，并且配置好环境变量参数，swig只要简单的将swig.exe添加到系统环境变量中。linux系统下，使用会很方便，直接编译即可。
 ```bash
 $ cd tf_pose/pafprocess
 $ swig -python -c++ pafprocess.i && python3 setup.py build_ext --inplace
