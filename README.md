@@ -25,6 +25,45 @@ Openpose的tensorflow实现版本。
 - slidingwindow
 ### 安装
 
+---
+* window10
+```bash
+git clone git@github.com:yinyuecheng1/tf-pose-estimation.git
+git clone https://github.com/pdollar/coco.git
+```
+
+安装python3
+
+```bash
+cd coco/PythonAPI
+# install pycocotools locally
+python setup.py build_ext --inplace
+
+# install pycocotools to the Python site-packages
+python setup.py build_ext install
+```
+
+如果出错参考这篇 :https://www.jianshu.com/p/de455d653301
+
+```bash
+$ cd tf-openpose
+$ pip install -r requirements.txt
+```
+
+下载swig
+：https://sourceforge.net/projects/swig/
+
+然后swig.exe放到环境变量PATH下面
+
+```bash
+$ cd tf_pose/pafprocess
+$ swig -python -c++ pafprocess.i && python3 setup.py build_ext --inplace
+```
+
+
+---
+* mac/linux
+
 将github的项目克隆到本地，进入到tf—pose目录下，有一个requirements.txt文件，这个文本文件中写好了所有需要的第三方库，比如numpy等，
 使用pip命令，可以一次性将这些第三方库安装好。
 ```bash
